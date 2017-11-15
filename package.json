@@ -4,11 +4,27 @@
   "description": "Nickj's javascript-bussiness-function-code collection.",
   "main": "index.js",
   "scripts": {
+    "build": "node build/build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nicksapp/nj-hammer.git"
   },
   "keywords": [
     "javascript"
   ],
   "author": "nickj",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "6.26.0",
+    "babel-loader": "7.1.2",
+    "babel-preset-es2015": "6.24.1",
+    "chalk": "2.3.0",
+    "copy": "0.3.1",
+    "open": "0.0.5",
+    "ora": "1.3.0",
+    "rimraf": "2.6.2",
+    "webpack": "3.8.1"
+  }
 }
