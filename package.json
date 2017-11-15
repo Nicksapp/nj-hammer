@@ -1,0 +1,14 @@
+{
+  "name": "nj-hammer",
+  "version": "1.0.0",
+  "description": "Nickj's javascript-bussiness-function-code collection.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "nickj",
+  "license": "MIT"
+}
