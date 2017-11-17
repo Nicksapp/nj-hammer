@@ -1,8 +1,8 @@
 {
   "name": "nj-hammer",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Nickj's javascript-bussiness-function-code collection.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "build": "node build/build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,7 +12,8 @@
     "url": "git+https://github.com/Nicksapp/nj-hammer.git"
   },
   "keywords": [
-    "javascript"
+    "javascript",
+    "function"
   ],
   "author": "nickj",
   "license": "MIT",

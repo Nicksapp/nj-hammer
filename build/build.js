@@ -32,4 +32,23 @@ new Promise((resolve, reject) => {
             console.log(chalk.cyan('Build complete. \n'))
         })
     })
+}).then(() => {
+    // 替换模块文件
+    let copying = ora('copying...')
+    copying.start()
+    rm('*.js', err => {
+        if (err) throw (err)
+        let folderList = fs.readdirSync(path.resolve(rootPath, 'src'))
+        folderList.forEach((item, index) => {
+            copy(`src/${item}/*.js`, path.resolve(rootPath, 'script'), function (err, files) {
+                if (err) throw err;
+                if (index === folderList.length - 1) {
+                    console.log(chalk.cyan('  Copy complete.\n'))
+                    copying.stop()
+                }
+            })
+        })
+    })
+}).catch((err) => {
+    throw err
 })
