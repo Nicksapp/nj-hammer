@@ -1,6 +1,6 @@
 {
   "name": "nj-hammer",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Nickj's javascript-bussiness-function-code collection.",
   "main": "src/index.js",
   "scripts": {

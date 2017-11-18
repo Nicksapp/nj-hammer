@@ -1,12 +1,53 @@
-const arrayEqual = require('./array/arrayEqual');
+/**
+ * @desc webpack打包入口文件
+ */
+const arrayEqual = require('./array/arrayEqual')
 
-const addClass = require('./class/addClass');
-const hasClass = require('./class/hasClass');
-const removeClass = require('./class/removeClass');
+const addClass = require('./class/addClass')
+const hasClass = require('./class/hasClass')
+const removeClass = require('./class/removeClass')
 
-const getCookie = require('./cookie/getCookie');
-const setCookie = require('./cookie/setCookie');
-const removeCookie = require('./cookie/removeCookie');
+const getCookie = require('./cookie/getCookie')
+const removeCookie = require('./cookie/removeCookie')
+const setCookie = require('./cookie/setCookie')
+
+const getOS = require('./device/getOS')
+const getExplore = require('./device/getExplore')
+
+const getScrollTop = require('./dom/getScrollTop')
+const offset = require('./dom/offset')
+const scrollTo = require('./dom/scrollTo')
+const setScrollTop = require('./dom/setScrollTop')
+const scrollToTop = require('./dom/scrollToTop')
+const smoothScrollTo = require('./dom/smoothScrollTo')
+
+const debounce = require('./function/debounce')
+const throttle = require('./function/throttle')
+
+const getKeyName = require('./keycode/getKeyName')
+
+const deepClone = require('./object/deepClone')
+const isEmptyObject = require('./object/isEmptyObject')
+
+const randomColor = require('./random/randomColor')
+const randomNum = require('./random/randomNum')
+
+const isEmail = require('./regexp/isEmail')
+const isIdCard = require('./regexp/isIdCard')
+const isPhoneNum = require('./regexp/isPhoneNum')
+const isUrl = require('./regexp/isUrl')
+
+const digitUppercase = require('./string/digitUppercase')
+
+const isSupportWebP = require('./support/isSupportWebP')
+
+const formatPassTime = require('./time/formatPassTime')
+const formatRemainTime = require('./time/formatRemainTime')
+
+const parseQueryString = require('./url/parseQueryString')
+const stringfyQueryString = require('./url/stringfyQueryString')
+const getUrlParamHash = require('./url/getUrlParamHash')
+
 
 module.exports = {
     arrayEqual,
@@ -14,8 +55,45 @@ module.exports = {
     addClass,
     hasClass,
     removeClass,
-    
+
     getCookie,
+    removeCookie,
     setCookie,
-    removeCookie
+
+    getOS,
+    getExplore,
+
+    getScrollTop,
+    offset,
+    scrollTo,
+    setScrollTop,
+    smoothScrollTo,
+    scrollToTop,
+
+    debounce,
+    throttle,
+
+    getKeyName,
+
+    deepClone,
+    isEmptyObject,
+
+    randomColor,
+    randomNum,
+
+    isEmail,
+    isIdCard,
+    isPhoneNum,
+    isUrl,
+
+    digitUppercase,
+
+    isSupportWebP,
+
+    formatPassTime,
+    formatRemainTime,
+
+    getUrlParamHash,
+    parseQueryString,
+    stringfyQueryString,
 }
